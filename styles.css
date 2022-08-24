@@ -14,6 +14,21 @@ html{
     scroll-behavior: smooth; 
 }
 
+
+/*Dark Mode*/
+
+:root{
+    --secondary-color: #000000;
+    --tertiary-color: #FFFFFF;  /*blanc*/
+}
+
+.dark-theme{
+    --secondary-color: #FFFFFF;
+    --tertiary-color: #000000; 
+    
+}
+
+
 /* tête de page */
 
 header.header{
@@ -25,9 +40,16 @@ header.header{
 header.header nav {
     align-items: center;
 }
-header.header img{
+
+#logoG{
      width: 100px; /* dimention du logo */
      border-radius: 50px; /*bord arondi*/
+}
+
+#moonIcon{
+    width: 35px;
+    cursor: pointer;
+    margin-left: 800px;
 }
 
 section.top-page{
@@ -53,7 +75,7 @@ section.top-page{
 
 /* titre "Guilhamassé Quentin */
 .big-title{
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     padding: 120px 70px;
     font-size: 70px;
@@ -65,12 +87,13 @@ section.top-page{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 30px;
+    color: #000000;
 }
 
 
 /* Bouton scroll vers le bas*/
 .scroll-down{
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     position: absolute;
@@ -80,7 +103,7 @@ section.top-page{
 
 /* Bouton scroll vers le haut*/
 .scroll-up{
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     position:relative;
@@ -101,7 +124,7 @@ nav.nav{
 
 
 nav.nav li a{ 
-    color: white;
+    color: #FFFFFF;
     font-size: 20px;
      margin-left: 100px;  /* espace les boutons*/
      font-family: 'Montserrat', sans-serif;
@@ -111,7 +134,7 @@ nav.nav li a{
 
 
 .fond-gris{
-    background-color:#E5E4E4;
+    background-color:var(--tertiary-color);
     margin-top: -41px;
     margin-bottom: -42px;
     height: auto; 
@@ -125,6 +148,7 @@ nav.nav li a{
     position: relative;
     margin-left:100px;
     padding-top: 50px;
+    color: var(--secondary-color);
     
 }
 
@@ -140,14 +164,21 @@ nav.nav li a{
 }
 
 
-.text-projet { 
+.text-projet{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
     margin-left: 100px;
+    margin-top:150px;
+    color: #046380;
+    
 }
 
 .text-cv{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
     margin-left: 100px;
     padding-bottom: 50px;
-    
+    color: #046380;
 }
 
 
@@ -166,7 +197,7 @@ nav.nav li a{
     position: relative; 
     margin-left: 100px;
     padding-top: 50px;
-    
+    color: #000000;
     
 }
 
@@ -174,7 +205,7 @@ nav.nav li a{
 .interêt-title::before{
     content: "";
     position: absolute;
-    background-color: white;
+    background-color: #FFFFFF;
     width: 50px;
     height: 7px;
     bottom: 0;
@@ -235,26 +266,17 @@ nav.nav li a{
     
 }
 
-.text-projet{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    margin-top:150px;
-    color: #046380;
-    
-}
 
-.text-cv{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    color: #046380;
-}
 
 /* pied de page (footer) */
+
+
+
 .copyright{
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     font-weight: 600;
-    color: #046380;
+    color: #000000;
     margin: 20px 100px;
 }
 

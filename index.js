@@ -18,5 +18,25 @@ const ring = () => {
 mugi.addEventListener("click", (e) => {
     console.log("Click !");
     ring();
-});  
+});
+
+
+// DARK MODE
+
+let icon = document.getElementById("moonIcon");
+ 
+/*icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+}*/
+
+//OU
+
+icon.addEventListener("click", (e) => {
+    document.body.classList.toggle("dark-theme");
+    if( document.body.classList.contains("dark-theme")){
+        icon.src = "sun.png";
+    }else{
+        icon.src = "moon.png";
+    }
+});
 
