@@ -27,6 +27,7 @@ header.header nav {
 }
 header.header img{
      width: 100px; /* dimention du logo */
+     border-radius: 50px; /*bord arondi*/
 }
 
 section.top-page{
